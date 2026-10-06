@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catálogo — Ficha de Biblioteca</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="gaveta">
+  <h1>📇 Catálogo de Livros</h1>
+  <p>CRUD completo — adicionar, buscar, editar status e remover fichas</p>
+  <input class="busca" id="busca" placeholder="Buscar por título ou autor...">
+</div>
+
+<main>
+  <form class="nova" id="formNovo">
+    <input id="novoTitulo" placeholder="Título" required>
+    <input id="novoAutor" placeholder="Autor" required>
+    <input id="novoIsbn" placeholder="ISBN">
+    <button type="submit">Arquivar</button>
+  </form>
+
+  <div id="lista"></div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
